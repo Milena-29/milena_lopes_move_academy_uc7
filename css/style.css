@@ -1,0 +1,1302 @@
+/* Geral  */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #00295C;
+}
+
+* {
+    text-decoration: none;
+}
+
+h1,h3,p,a {
+    color: white;
+    margin-top: 0;
+}
+
+h2 {
+    color: #00295C;
+    text-align: center;
+}
+
+strong {
+    color: #0096D6;
+}
+
+sub {
+    font-size: 20px;
+}
+
+/* header */
+
+header {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.Paginas {
+    display: flex;
+    gap: 50px;
+    font-size: 15px;
+}
+
+.Paginas a {
+    transition: .3s;
+    font-size: 15px;
+}
+
+.Paginas a:hover {
+    color: #0096D6;
+    transform: translateY(-5px);
+}
+
+.Entrar {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 8px 15px;
+    transition: .3s;
+}
+
+.Entrar:hover {
+    background: #0096D6;
+}
+
+/* rodape */
+
+footer {
+    background: #2a4591;
+    padding: 30px;
+    margin: 0px;
+    width: 100%;
+}
+
+.coluna {
+    width: 23%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.coluna p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.coluna p img {
+    width: 30px;
+}
+
+.newsletter {
+    display: flex;
+}
+
+.email {
+    height: 35px;
+}
+
+.Enviar {
+    border: none;
+    background: #0096D6;
+    cursor: pointer;
+}
+
+/* Index.html */
+
+.painelPrincipal {
+    background-image: url("../img/Academia_img.png");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 80px;
+}
+
+.painelPrincipal h1 {
+    font-size: 60px;
+}
+
+.painelPrincipal p {
+    width: 500px;
+    font-size: 20px;
+}
+
+.Conjunto_recursos {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.recursos {
+    width: 280px;
+    min-height: 250px;
+    background: rgba(255, 255, 255, 0.692);
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all .3s ease;
+}
+
+.recursos:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px #0096D6;
+}
+
+.recursos p {
+    color: #333;
+}
+
+.recursos h2 {
+    color: #00295C;
+}
+
+
+/* Planos */
+
+.FundoPlanosTopo {
+    background: #000814;
+    border-bottom-left-radius: 300px;
+    padding-bottom: 120px;
+    font-size: 15px;
+}
+
+.FundoPlanosBaixo {
+    position: absolute;
+    background: #000814;
+    border-bottom-left-radius: 300px;
+    left: 350px;
+    width: 1700px;
+    height: 200px;
+    padding: 80px 0;
+}
+
+.TopoPlanos {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.planosTitulo {
+    width: 45%;
+}
+
+.planosTitulo h1 {
+    font-size: 45px;
+}
+
+.planosTitulo p {
+    font-size: 20px;
+}
+
+.imagemPlano {
+    margin-top: 100px;
+    width: 700px;
+    height: 350px;
+    background-image: url("../img/Tela_planos.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Card dos planos */
+.card {
+    width: 300px;
+    height: 420px;
+    background: #ffffffe1;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px #0096D6;
+}
+
+.card h2 {
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 32px;
+}
+
+.card ul {
+    text-align: left;
+    color: #333;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 28px;
+    color: #0096D6;
+}
+
+.preco span {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Faixa de mais escolhido */
+
+.faixa {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    text-align: center;
+    background: #023E8A;
+    color: white;
+    padding: 8px 0;
+    border-radius: 8px;
+}
+
+/* Selo dos Cards */
+
+.seloB,.seloP,.seloV {
+    width: 40px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+/* Botão Planos */
+.card button a {
+    color: white;
+}
+
+.card button {
+    margin-top: auto;
+    background: #31489c;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.card button:hover {
+    background: #0096D6;
+    transform: scale(1.05);
+}
+
+/* Tabela dos Planos */
+
+.TabelaPlanos {
+    width: 55%;
+    margin: 40px auto;
+}
+
+.TabelaPlanos table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.TabelaPlanos th {
+    background: #31489c;
+    color: white;
+    padding: 10px;
+}
+
+.TabelaPlanos td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+.TabelaPlanos td:first-child {
+    text-align: left;
+}
+
+/* Unidades */
+
+.UniFundo {
+    background: linear-gradient(90deg, #000 66%, #023e8a 76%);
+}
+
+/* Topo Unidades */
+
+.UniTitulo {
+    width: 450px;
+    margin-left: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.UniFundoImg {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../img/Unidades +.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 400px;
+}
+
+/* "Mapa" */
+
+.UniTopo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.UniMapa {
+    background: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    display: inline;
+    align-items: center;
+    gap: 10px;
+}
+
+.UniMapa a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.UniMapa img {
+    width: 32px;
+    height: 32px;
+}
+
+.UniMapa h3 {
+    margin: 0;
+    color: #00295C;
+}
+
+/* Lista das Unidades */
+
+.ListaUnidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Card das Unidades */
+
+.UniLocal {
+    width: 440px;
+    height: 170px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.UniLocal:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px #0096D6;
+}
+
+.UniLocalImg {
+    width: 154px;
+    height: 100%;
+    background-image: url("../img/Academia_padrão.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.UniInfo {
+    padding: 10px;
+}
+
+.UniInfo h2 {
+    color: black;
+    text-align: left;
+    font-size: 18px;
+}
+
+.UniInfo p {
+    color: black;
+    font-size: 11px;
+    margin: 3px 0;
+}
+
+/* Login */
+
+.PaginaLogin {
+    background: white;
+    display: flex;
+    min-height: 100vh;
+}
+
+.FotoLogin {
+    width: 50%;
+    background-image: url("../img/Tela_de_login.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.Voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.Login {
+    width: 50%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.LoginLogo {
+    width: 300px;
+    margin-top: 80px;
+    align-self: center;
+}
+
+.Login h1 {
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.Login p {
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.Login label {
+    color: black;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.Login input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.Login button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: #31489c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Login button:hover {
+    background: #0096D6;
+}
+
+/* Cadastro */
+
+.PaginaCadastro {
+    background: #00295C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.BoxCadastro {
+    display: flex;
+    align-items: stretch;
+}
+
+.FotoCadastro {
+    width: 450px;
+    background-image: url("../img/Cadastro.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.Cadastro {
+    width: 600px;
+    background: #ffffff;
+    padding: 30px 50px;
+    border-radius: 0 15px 15px 0;
+}
+
+.CadastroLogo {
+    width: 260px;
+    display: block;
+    margin: auto;
+}
+
+.Cadastro h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.Cadastro label {
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.Cadastro input,.Cadastro select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+.Linha {
+    display: flex;
+    gap: 15px;
+}
+
+.CampoNome {
+    flex: 2;
+}
+
+.CampoData {
+    flex: 1;
+}
+
+.Cadastro button {
+    width: 60%;
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px;
+    border: none;
+    background: #023E8A;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Cadastro button:hover {
+    background: #0096D6;
+}
+
+/* PAGAMENTO */
+.PagamentoTitulo {
+    color: white;
+    margin: 20px 0;
+    padding: 15px;
+
+}
+
+.PagamentoTitulo h1 {
+    margin-bottom: 5px;
+}
+
+.PagamentoArea {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.PagamentoForm {
+    flex: 2;
+    background: #2f4797;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.PagamentoForm h2 {
+    color: white;
+    text-align: left;
+}
+
+.PagamentoForm label {
+    color: white;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.PagamentoForm input,.PagamentoForm select {
+    width: 100%;
+    padding: 12px;
+    background: #233a85;
+    border: 1px solid #6b7fc7;
+    color: white;
+    box-sizing: border-box;
+}
+
+.MetodosPagamento {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.Metodo {
+    border: 1px solid #9cb4ff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.Metodo:hover {
+    background: #3d5cb8;
+}
+
+.Metodo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.InfoMetodo {
+    display: flex;
+    flex-direction: column;
+}
+
+.InfoMetodo span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.InfoMetodo p {
+    margin: 3px 0 0;
+    color: #d6d6d6;
+    font-size: 12px;
+}
+
+.ativo {
+    background: #4671b6;
+}
+
+.LinhaInputs {
+    display: flex;
+    gap: 15px;
+}
+
+.LinhaInputs div {
+    flex: 1;
+}
+
+.ResumoPedido {
+    width: 280px;
+    background: #2f4797;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.ResumoPedido h2 {
+    color: white;
+    text-align: left;
+}
+
+.PlanoResumo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.PlanoResumo h3 {
+    margin: 0;
+}
+
+.Valores {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.SemTaxa {
+    border: 1px solid #7f94d6;
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+    vertical-align: top;
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+    gap: 10px;               
+    font-weight: bold;       
+        
+
+}
+
+.Finalizar {
+    width: 100%;
+    background: #2f2fc5;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.Finalizar:hover {
+    background: #4150ff;
+}
+
+/* Aulas */
+
+.principal {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.textoAulas h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.textoAulas span {
+    color: #0096D6;
+}
+
+.textoAulas p {
+    color: #cbd5e1;
+}
+
+.cardAula {
+    width: 900px;
+    height: 270px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagens-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imagens-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.imagens-slide img.ativa {
+    display: block;
+    animation: fade 0.6s ease-in-out;
+}
+
+/* botões */
+.botao-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px 12px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+/* bolinhas */
+.indicadores {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.bolinha {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.bolinha.ativa {
+    background: white;
+}
+
+/* animação */
+@keyframes fade {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.infoAula {
+    padding: 30px;
+}
+
+.infoAula h2 {
+    color: white;
+    text-align: left;
+}
+
+.tags {
+    color: #0096D6;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.textoCard {
+    color: #a4b3d6;
+    font-size: 12px;
+}
+
+.bolinhas {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    display: flex;
+    gap: 6px;
+}
+
+.bolinha {
+    width: 15px;
+    height: 2px;
+    background: rgba(255, 255, 255, .4);
+}
+
+.bolinhaAtivo {
+    width: 25px;
+    background: white;
+}
+
+.filtros {
+    display: flex;
+    /* Coloca tudo no centro da tela */
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.filtro {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* Alinha os itens verticalmente */
+}
+
+.caixa select {
+    width: 250px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+.dias {
+    display: flex;
+    align-items: center;
+    background: #001f47;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.setaD {
+    border: none;
+    /* Remove o border do botão */
+    background-image: url("../img/Seta_direita.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    background-color: transparent;
+    /* Remove a cor do fundo do botão */
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.setaE {
+    border: none;
+    background-image: url("../img/Seta_esquerda.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    background-color: transparent;/* Remove a cor do fundo do botão */
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.listaDias {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.dia {
+    flex: 1;
+    text-align: center;
+    background: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dia:hover {
+    color: white;
+    background: #0096D6;
+    transform: translateY(-7px);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.data {
+    display: block;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aula {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 100px 1.5fr 1.5fr 1fr 160px;
+    align-items: center;
+    color: #00295C;
+}
+
+.hora,.nomeAula {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.professor,.local {
+    color: #666;
+}
+
+.acao {
+    text-align: right;
+}
+.reservar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.reservar:hover {
+    color: white;
+    background: #00295C;
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px #0096D6;
+}
+/* TREINOS */
+
+.TreinosBody {
+    background: linear-gradient(35deg, #00295C 45%, #000 100%);
+}
+
+.TreinosContainer {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.TreinosTitulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.TreinosTitulo h1 {
+    font-size: 45px;
+}
+
+.TreinosTitulo p {
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+    color: #d8d8d8;
+}
+
+.ListaTreinos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.CardTreino {
+    width: 280px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: .3s;
+}
+
+.CardTreino:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px #0096D6;
+}
+
+.CardTreino img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.CardTreino h2 {
+    margin-top: 20px;
+}
+
+.CardTreino p {
+    color: #333;
+    padding: 0 20px;
+    min-height: 90px;
+}
+
+.CardTreino button {
+    margin-bottom: 20px;
+    background: #31489c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.CardTreino button:hover {
+    background: #0096D6;
+}
+/* Container principal do Pix */
+.ContainerPix {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+/* Redimensiona o QR Code */
+.QrCodeImg {
+    width: 220px;
+    height: 220px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Passos do Pix */
+.InstrucoesPix {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.PassoPix {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.NumeroPasso {
+    background-color: #007bb6;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.PassoPix p {
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Linha de Copiar e Colar Pix */
+.LinhaCopiaCola {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.LinhaCopiaCola input {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #1e5a96;
+    border-radius: 4px;
+    padding: 10px;
+    color: #a0c4ff;
+    font-size: 0.9rem;
+}
+
+.LinhaCopiaCola button {
+    background-color: #0b4f8a;
+    color: #ffffff;
+    border: 1px solid #1e5a96;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.LinhaCopiaCola button:hover {
+    background-color: #007bb6;
+}
+
+/* Estilos da área de Boleto */
+.BoxBoleto {
+    border: 7px solid #1f82e5;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.IconeBoleto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid #1f82e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IconeBoleto img {
+    width: 40px;
+}
+
+.BtnGerarBoleto {
+    width: 100%;
+    background-color: #007bb6;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.AlertaInformativo {
+    border: 1px solid #1e5a96;
+    border-radius: 8px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.IconeInfo {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #007bb6;
+    color: #007bb6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.TextoInfo strong {
+    color: #ffffff;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.TextoInfo p {
+    color: #a0c4ff;
+    font-size: 0.85rem;
+    margin: 3px 0 0 0;
+}

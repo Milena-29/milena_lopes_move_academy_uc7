@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a Move+ Academy! Uma academia completa com infraestrutura moderna, treinos personalizados e professores prontos para acelerar os seus resultados. Na Move+ Academy você encontra o equilíbrio perfeito entre saúde e alta performance. Treinos inteligentes, modalidades variadas e uma comunidade ativa. Comece hoje!">
+    <title>Página de cadastro</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img\+.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#00295C">
+</head>
+
+<body class="PaginaCadastro">
+    <div class="BoxCadastro">
+        <div class="FotoCadastro"></div>
+
+        <div class="Cadastro">
+
+            <img src="img/move+ academyBranca.png" class="CadastroLogo">
+
+            <h1>Criar conta</h1>
+
+            <div class="Linha">
+
+                <div class="CampoNome">
+                    <label>Nome completo</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="CampoData">
+                    <label>Data de nascimento</label>
+                    <input type="date">
+                </div>
+
+            </div>
+
+            <label>E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com">
+
+            <label>Telefone</label>
+            <input type="tel" id="telefone" placeholder="(xx) xxxxxxxx">
+
+            <label>Senha</label>
+            <input type="password" id="senha" placeholder="********">
+
+            <label>Confirme o plano escolhido e pago</label>
+            <select>
+                <option>Selecione um plano</option>
+                <option>Básico</option>
+                <option>Premium+</option>
+                <option>VIP+</option>
+            </select>
+
+            <label>Confirme a forma de pagamento escolhida</label>
+            <select>
+                <option>Selecione a forma de pagar</option>
+                <option>PIX</option>
+                <option>Cartão</option>
+                <option>Boleto</option>
+            </select>
+
+            <button onclick="cadastrar()">Criar conta</button>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
