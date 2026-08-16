@@ -10,6 +10,7 @@ const ASSETS_TO_CACHE = [
   './img/Academia_img.png',
   './js/script.js',
   './index.html',
+  './manifest.json',
 ];
 
 // Evento de Instalação: Salva todos os arquivos estáticos no cache
